@@ -10,7 +10,6 @@ $(document).ready(function() {
     var userGitHub;
     var gettingRepos = new GetRepos(userNameQuery);
     gettingRepos.done(function(repos) {
-      console.log("fun");
       userGitHub = new GitHubUserRepositories(userNameQuery, repos);
       var htmlOutput = "<table><tr><td>Repo Name</td><td>Repo Description</td><td>Creation Date</td></tr>";
       userGitHub.userRepositories.forEach(function(repo) {

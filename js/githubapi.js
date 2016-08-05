@@ -11,9 +11,7 @@ function GitHubUserRepositories(userName, retrievedRepos) {
     repository['description'] = retrievedRepo.description;
     repository['creationDate'] = retrievedRepo.created_at;
     self.userRepositories.push(repository);
-    console.log(retrievedRepo);
   });
-  console.log(this);
 }
 
 function GetRepos(userName){
