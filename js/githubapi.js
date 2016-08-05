@@ -13,6 +13,7 @@ function GitHubUserRepositories(userName, retrievedRepos) {
     self.userRepositories.push(repository);
     console.log(retrievedRepo);
   });
+  console.log(this);
 }
 
 function GetRepos(userName){
