@@ -1,18 +1,21 @@
 <html>
-  <head
+  <head>
     <link rel="stylesheet" href="build/css/vendor.css">
     <script src="build/js/vendor.min.js"></script>
     <script type="text/javascript" src="build/js/app.js"></script>
+    <link rel="stylesheet" href="build/css/styles.css">
     <title>Git Hub API</title>
   </head>
   <body>
-    <h1>help...</h1>
+    <h1>GitHub Repository Looup</h1>
+    <h3>Look up a user's repositories' names, descriptions and create dates</h3>
     <form id="userReposQuery" action="index.html" method="post">
+      <label for="userName">GitHub username</label>
       <input type="text" name="userName" id="userName">
-      <button type="submit">Get user's repos</button>
+      <button type="submit">Get user's repositories</button>
     </form>
     <div id="repositoryInfoOutput">
-      
+
     </div>
   </body>
 </html>
